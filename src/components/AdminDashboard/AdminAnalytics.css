@@ -1,0 +1,89 @@
+.analytics-dashboard {
+  background: #f8fbff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 120, 255, 0.1);
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+  animation: fadeIn 0.6s ease;
+}
+
+.analytics-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0078ff;
+  margin-bottom: 30px;
+}
+
+.stats-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px 40px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 120, 255, 0.15);
+}
+
+.stat-card h3 {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0078ff;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 25px;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0, 120, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 120, 255, 0.12);
+}
+
+.chart-card h3 {
+  text-align: center;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

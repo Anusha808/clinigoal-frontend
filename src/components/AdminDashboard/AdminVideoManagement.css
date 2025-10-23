@@ -1,0 +1,242 @@
+.admin-video-management {
+  padding: 30px;
+  background: linear-gradient(135deg, #f8fbff 0%, #f4fff9 100%);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.admin-video-management h2 {
+  font-size: 2rem;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* 🎬 Upload Form */
+.video-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #004080;
+  margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* 📁 Buttons */
+.upload-btn,
+.cancel-btn {
+  margin-top: 20px;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-btn {
+  background: linear-gradient(90deg, #007bff, #00b4d8);
+  color: white;
+}
+
+.upload-btn:hover {
+  background: linear-gradient(90deg, #0056b3, #0088cc);
+}
+
+.cancel-btn {
+  background: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+
+.cancel-btn:hover {
+  background: #d32f2f;
+}
+
+/* 📊 Progress Bar */
+.progress-bar {
+  position: relative;
+  background: #e9ecef;
+  border-radius: 10px;
+  height: 12px;
+  margin-top: 15px;
+}
+
+.progress-fill {
+  background: #007bff;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 13px;
+  color: #007bff;
+}
+
+/* 📹 Video Table */
+.video-table-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.video-table-container h3 {
+  font-size: 1.5rem;
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.video-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.video-table thead {
+  background: #007bff;
+  color: white;
+}
+
+.video-table th,
+.video-table td {
+  text-align: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.video-table tbody tr:hover {
+  background: #f5faff;
+}
+
+/* 🎯 Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.view-btn,
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.view-btn {
+  background: #17a2b8;
+}
+
+.view-btn:hover {
+  background: #138496;
+}
+
+.edit-btn {
+  background: #28a745;
+}
+
+.edit-btn:hover {
+  background: #218838;
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* 🖼️ Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal {
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  background: #d32f2f;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .video-table th,
+  .video-table td {
+    font-size: 13px;
+  }
+}

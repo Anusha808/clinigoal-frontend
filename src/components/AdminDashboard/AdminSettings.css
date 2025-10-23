@@ -1,0 +1,123 @@
+.settings-container {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #001233;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.settings-title {
+  text-align: center;
+  color: #0078ff;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.settings-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 25px rgba(0, 60, 130, 0.1);
+  transition: 0.3s ease;
+}
+
+.settings-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 120, 255, 0.2);
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #001e63;
+  font-weight: 600;
+}
+
+.settings-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.settings-item label {
+  font-weight: 500;
+  color: #003366;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.settings-item .icon {
+  color: #0078ff;
+}
+
+.settings-item input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #dce3f0;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.settings-item input:focus {
+  border-color: #0078ff;
+  box-shadow: 0 0 8px rgba(0, 120, 255, 0.25);
+  outline: none;
+}
+
+.readonly {
+  background: #f4f7fc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 120, 255, 0.25);
+  transition: 0.3s ease;
+}
+
+.save-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 120, 255, 0.4);
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease;
+}
+
+.status-message:contains("✅") {
+  color: #00b37a;
+}
+
+.status-message:contains("❌") {
+  color: #ff4d4d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

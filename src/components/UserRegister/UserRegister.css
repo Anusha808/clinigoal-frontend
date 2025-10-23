@@ -1,0 +1,85 @@
+.user-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #f0fff4);
+  font-family: "Poppins", sans-serif;
+}
+
+.user-register-card {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.user-register-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.user-register-card h2 {
+  color: #0078ff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.user-register-card input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.user-register-card input:focus {
+  border-color: #0078ff;
+  box-shadow: 0 0 5px rgba(0, 120, 255, 0.3);
+}
+
+.user-register-card button {
+  width: 100%;
+  background: linear-gradient(90deg, #0078ff, #00c6ff);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.user-register-card button:hover {
+  background: linear-gradient(90deg, #005fdd, #00a2ff);
+  transform: translateY(-2px);
+}
+
+.error {
+  color: #d9534f;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-text {
+  color: #0078ff;
+  font-weight: 600;
+  text-decoration: none;
+}

@@ -1,0 +1,137 @@
+.user-tracking-container {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f4f9ff 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.tracking-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 86, 179, 0.2);
+}
+
+.tracking-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 10px;
+}
+
+.tracking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  color: #333;
+}
+
+.tracking-table th {
+  background: #007bff;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.tracking-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.tracking-table tr:hover {
+  background-color: #f8fbff;
+  transition: 0.2s;
+}
+
+.quiz-score {
+  font-weight: 600;
+  color: #333;
+}
+
+.status-badge {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status-badge.submitted {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.cert-status {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.cert-status.approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.cert-status.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.cert-status.pending {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.approve-btn,
+.reject-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+}
+
+.approve-btn {
+  background: #28a745;
+  color: white;
+}
+
+.approve-btn:hover {
+  background: #218838;
+}
+
+.reject-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.reject-btn:hover {
+  background: #c82333;
+}
+
+.loading,
+.no-users {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-top: 40px;
+}

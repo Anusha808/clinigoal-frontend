@@ -1,0 +1,126 @@
+/* 🌟 DashboardOverview.css */
+/* Professional, modern dashboard design */
+
+.overview-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fbff, #eef3ff);
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.overview-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1e2a78;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌈 Dashboard Grid */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 💳 Card Styles */
+.overview-card {
+  background: #fff;
+  color: #fff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.overview-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.overview-card:hover::before {
+  top: -60%;
+  right: -60%;
+}
+
+.overview-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧩 Icon Section */
+.card-icon {
+  font-size: 2.8rem;
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+/* 📊 Info Section */
+.card-info {
+  text-align: right;
+}
+
+.card-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.card-info p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* 🧠 Responsive Design */
+@media (max-width: 768px) {
+  .overview-container {
+    padding: 20px;
+  }
+
+  .overview-title {
+    font-size: 2rem;
+  }
+
+  .overview-card {
+    padding: 25px 20px;
+  }
+
+  .card-info p {
+    font-size: 1.5rem;
+  }
+}
+
+/* ✨ Entry Animation */
+.overview-card {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
